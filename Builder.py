@@ -1,6 +1,8 @@
 import xml.etree.ElementTree as ET
 import codecs, shutil, os
 
+os.system("pip3 install -r requirements.txt")
+
 tree = ET.parse("data.xml")
 root = tree.getroot()
 for data in root.iter("A1"):
